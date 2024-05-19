@@ -24,9 +24,9 @@ class CurrencyService
     public function generateOutput(array $data)
     {
         return [
-            'dollar buy' => $data[1]['buy'],
-            'dollar sell' => $data[1]['sale'],
-            'actual date' => Carbon::now()->toDateTimeString(),
+            'dollarBuy' => $data[1]['buy'],
+            'dollarSell' => $data[1]['sale'],
+            'actualDate' => Carbon::now()->toDateTimeString(),
         ];
     }
 }

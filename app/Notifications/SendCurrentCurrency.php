@@ -36,9 +36,9 @@ class SendCurrentCurrency extends Notification
     {
         return (new MailMessage)
             ->line('The current currency rates are:')
-            ->line('Dollar buy: ' . $this->currency['dollar buy'])
-            ->line('Dollar sell: ' . $this->currency['dollar sell'])
-            ->line('Actual date: ' . $this->currency['actual date']);
+            ->line('Dollar buy: ' . $this->currency['dollarBuy'])
+            ->line('Dollar sell: ' . $this->currency['dollarSell'])
+            ->line('Actual date: ' . $this->currency['actualDate']);
     }
 
     /**
